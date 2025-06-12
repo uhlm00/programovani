@@ -1,0 +1,26 @@
+/* --- minimalistická úprava tabulky --- */
+table,               /* jeden společný rámeček */
+th, td {
+  /* rámečky buněk */
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.6rem 0.75rem;
+}
+
+th {
+  /* hlavička odlišená podkladem */
+  background: #f4f1d6;
+  text-align: left;
+}
+
+/* zarovnání sloupců (nemusí se dávat <colgroup>) */
+td:nth-child(2) {
+  text-align: center;
+}
+td:nth-child(3) {
+  text-align: right;
+}

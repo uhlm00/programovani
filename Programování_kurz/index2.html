@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Úkol 1 – různé způsoby stylování</title>
+
+    <!-- 2) Vnitřní styl (embedded) -->
+    <style>
+      strong {
+        /* Tyrkysová barva pro prvek <strong> */
+        color: aqua;
+      }
+    </style>
+
+    <!-- 3) Externí styl -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ukázka různých typů CSS</h1>
+
+    <ol>
+      <!-- 1) Inline styl – má nejvyšší prioritu -->
+      <li style="color: crimson">
+        Inline styl &lt;style="color: crimson;"&gt;
+      </li>
+
+      <!-- 2) Vnitřní (embedded) styl – priorita pod inline -->
+      <li><strong>Vnitřní styl (&lt;style&gt; v hlavičce)</strong></li>
+
+      <!-- 3) Externí soubor – nejnižší priorita, ale všechny ostatní prvky se takto obarví na zeleno -->
+      <li>
+        Tento text dědí barvu <em>z externího souboru</em>
+        <code>style.css</code>.
+      </li>
+    </ol>
+  </body>
+</html>
