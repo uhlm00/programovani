@@ -1,7 +1,0 @@
-/* 3) Externí styl – nastavení výchozí barvy pro celé tělo stránky */
-body {
-  color: green;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  background: #fffbe6; /* jemný žlutý podklad jako v zadání */
-}
